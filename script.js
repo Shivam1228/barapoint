@@ -1,11 +1,3 @@
-'use strict';
-
-
-
-/**
- * add event on element
- */
-
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
     for (let i = 0; i < elem.length; i++) {
@@ -15,7 +7,50 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
+function submitForm(event) {
+  event.preventDefault();
 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const category = document.getElementById('category').value;
+  const date = document.getElementById('date').value;
+  const message = document.getElementById('message').value;
+
+  const jsonData = {
+    name: name,
+    email: email,
+    phone: phone,
+    category: category,
+    date: date,
+    message: message
+  };
+
+  fetch('https://appointhere-production.up.railway.app/message/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonData)
+  })
+  .then(response => {
+    if (response.ok) {
+      // Form data sent successfully
+      alert('Form submitted successfully!');
+    } else {
+      // Error in form submission
+      alert('Hello, An error occurred while submitting the form. Please try again.');
+    }
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('An error occurred while sending form data:', error);
+    alert('An error occurred while sending form data. Please try again later.');
+  });
+}
+
+const form = document.getElementById('appoin-form');
+form.addEventListener('submit', submitForm);
 
 
 /**

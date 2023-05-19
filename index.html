@@ -733,41 +733,31 @@
               <p class="section-text">
               
               </p>
-
-              <form action="" class="appoin-form">
-
+              <form id="appoin-form" class="appoin-form">
                 <div class="input-wrapper">
-                  <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
-
-                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                  <input type="text" id="name" placeholder="Your Full Name" required class="input-field">
+                  <input type="email" id="email" placeholder="Email Address" required class="input-field">
                 </div>
-
                 <div class="input-wrapper">
-                  <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
-
-                  <select name="category" class="input-field">
-
-                    <option value="Select category">Select category</option>
-                    <option value="Beauty & spa">Beauty & spa</option>
+                  <input type="tel" id="phone" placeholder="Phone Number" required class="input-field">
+                  <select id="category" required class="input-field">
+                    <option value="">Select category</option>
+                    <option value="Beauty &amp; spa">Beauty &amp; spa</option>
                     <option value="Body massage">Body massage</option>
-                    <option value="Shaving & Facial">Shaving & Facial</option>
+                    <option value="Shaving &amp; Facial">Shaving &amp; Facial</option>
                     <option value="Hair Color">Hair Color</option>
-
                   </select>
                 </div>
-
-                <input type="date" name="date" required class="input-field date">
-
-                <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
-
+                <input type="date" id="date" required class="input-field date">
+                <textarea id="message" placeholder="Write Message" required class="input-field"></textarea>
                 <button type="submit" class="form-btn">
                   <span class="span">Appointment Now</span>
-
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </button>
-
               </form>
-
+              
+              
+              
             </div>
 
             <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
