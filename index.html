@@ -183,7 +183,26 @@
 
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
+               <h1 style="text-align: center;">Service Provider Verification</h1>
 
+        <label for="providerId" style="font-weight: bold;background-color: #4caf50;">Enter Service Provider ID:</label>
+        <input type="text" id="providerId" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+    
+        <button onclick="verifyServiceProvider()" style="padding: 10px 20px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">Verify</button>
+    
+        <div id="verificationResult" style="margin-top: 20px; padding: 10px; border: 1px solid #11f838; border-radius: 5px; background-color: white;"></div>
+    
+        <script>
+            function verifyServiceProvider() {
+                var providerId = document.getElementById("providerId").value;
+                // Check if the entered ID is within the range 201 to 206
+                if (providerId >= 201 && providerId <= 206) {
+                    document.getElementById("verificationResult").innerText = "Service Provider Verified!";
+                } else {
+                    document.getElementById("verificationResult").innerText = "Service Provider not found or ID is incorrect.";
+                }
+            }
+        </script>
         </div>
       </section>
 
