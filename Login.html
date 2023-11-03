@@ -24,6 +24,7 @@
                 <h1>Sign in</h1>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
                 <button type="submit">Sign In</button>
             </form>
         </div>
@@ -48,13 +49,7 @@
     
     <script>
         const firebaseConfig = {
-            apiKey: "AIzaSyDoao1sf7cGejhHulPgbKT2rooDg0dV0vs",
-            authDomain: "barapoint-8a961.firebaseapp.com",
-            projectId: "barapoint-8a961",
-            storageBucket: "barapoint-8a961.appspot.com",
-            messagingSenderId: "317367654217",
-            appId: "1:317367654217:web:127d6d15fc18588a646c98"
-     };
+        };
 
         // Initialize Firebase
         const app = firebase.initializeApp(firebaseConfig);
@@ -96,21 +91,21 @@
 
         // Sign in form submission
         signInForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = signInForm.querySelector('input[placeholder="Email"]').value;
-        const password = signInForm.querySelector('input[placeholder="Password"]').value;
+            e.preventDefault();
+            const email = signInForm.querySelector('input[placeholder="Email"]').value;
+            const password = signInForm.querySelector('input[placeholder="Password"]').value;
 
-        auth.signInWithEmailAndPassword(email, password)
+            auth.signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                // Redirect to index.html upon successful sign-in
-                window.location.href = 'index.html'; // Change this to the path of your index.html file
+                // Further actions if needed
+                alert('User signed in successfully!');
             })
             .catch((error) => {
                 const errorMessage = error.message;
                 alert(errorMessage);
             });
-    });
+        });
     </script>
 </body>
 </html>
