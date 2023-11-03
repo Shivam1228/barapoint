@@ -136,7 +136,7 @@
 
 
             <li class="navbar-item">
-              <a href="#footer-list" class="navbar-link" data-nav-link>Contact</a>
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
             </li>
             <li class="navbar-item">
               <a href="Login.html" class="navbar-link" data-nav-link>Login/Register</a>
@@ -177,7 +177,7 @@
           <h1 class="h1 hero-title">barber  and other household services</h1>
 
           <p class="hero-text">
-            Now you can just use appointhere and  get all the services here ........
+            Now you can just use appointME and  get all the services here ........
           </p>
 
           <a href="#" class="btn has-before">
@@ -185,26 +185,7 @@
 
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
-               <h1 style="text-align: center;">Service Provider Verification</h1>
 
-        <label for="providerId" style="font-weight: bold;background-color: #4caf50;">Enter Service Provider ID:</label>
-        <input type="text" id="providerId" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
-    
-        <button onclick="verifyServiceProvider()" style="padding: 10px 20px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">Verify</button>
-    
-        <div id="verificationResult" style="margin-top: 20px; padding: 10px; border: 1px solid #11f838; border-radius: 5px; background-color: white;"></div>
-    
-        <script>
-            function verifyServiceProvider() {
-                var providerId = document.getElementById("providerId").value;
-                // Check if the entered ID is within the range 201 to 206
-                if (providerId >= 201 && providerId <= 206) {
-                    document.getElementById("verificationResult").innerText = "Service Provider Verified!";
-                } else {
-                    document.getElementById("verificationResult").innerText = "Service Provider not found or ID is incorrect.";
-                }
-            }
-        </script>
         </div>
       </section>
 
@@ -415,7 +396,7 @@
                     <i class="flaticon-spa" aria-hidden="true"></i>
                   </div>
 
-                  <p class="btn-text">electrician and carpenter</p>
+                  <p class="btn-text">electrician and carpainter</p>
                 </button>
               </li>
 
@@ -547,7 +528,7 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Carpenter</h3>
+                    <h3 class="h3 card-title">Carpainter</h3>
 
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
@@ -736,103 +717,64 @@
       <!-- 
         - #APPOINTMENT
       -->
-  .appoin { padding-block-start: 0; }
-  
-  .appoin-card .card-banner { display: none; }
-  
-  .appoin-card .card-content {
-    background-color: var(--indian-yellow);
-    padding: 80px 15px;
-    text-align: center;
-    color: var(--white);
-  }
-  
-  .appoin-card .section-title { color: var(--white); }
-  
-  .appoin-card .section-text { margin-block: 15px 55px; }
-  
-  .input-field {
-    background-color: var(--white);
-    color: var(--davys-gray);
-    min-height: 56px;
-    padding-inline: 25px;
-    border-radius: var(--radius-5);
-    margin-block-end: 20px;
-    outline: none;
-    outline-offset: 0;
-  }
-  .selectworker {
-    background-color: var(--white);
-    color: var(--davys-gray);
-    min-height: 56px;
-    padding-inline: 25px;
-    border-radius: var(--radius-5);
-    margin-block-end: 20px;
-    outline: none;
-    outline-offset: 0;
-  }
-  
-  .input-field:focus { outline: 3px solid var(--black_30); }
-  
-  select.input-field { appearance: none; }
-  select.selectworker { appearance: none; }
-  
-  select.input-field,
-  .input-field::placeholder,
-  .input-field.date {
-    font-family: var(--ff-oswald);
-    color: var(--eerie-black-1);
-    font-weight: var(--fw-500);
-  }
-  select.selectworker,
-  .selectworker::placeholder,
-  .selectworker.date {
-    font-family: var(--ff-oswald);
-    color: var(--eerie-black-1);
-    font-weight: var(--fw-500);
-  }
-  
-  .input-field > option {
-    color: var(--sonic-silver);
-    font-family: var(--ff-rubik);
-  }
-  
-  .input-field.date { text-transform: uppercase; }
-  
-  .input-field::-webkit-calendar-picker-indicator { opacity: 0.85; }
-  
-  textarea.input-field {
-    padding-block: 15px;
-    min-height: 100px;
-    height: 120px;
-    max-height: 150px;
-    resize: vertical;
-  }
-  
-  .form-btn {
-    color: var(--white);
-    font-family: var(--ff-oswald);
-    font-size: var(--fs-14);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid var(--white);
-    padding: 13px;
-    border-radius: var(--radius-5);
-    transition: var(--transition-1);
-  }
-  
-  .form-btn:is(:hover, :focus) {
-    background-color: var(--white);
-    color: var(--eerie-black-1);
-  }
-     
-         
-            
+
+      <section class="section appoin" id="appointment" aria-label="appointment">
+        <div class="container">
+
+          <div class="appoin-card">
+
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <h2 class="h2 section-title">Make Appointment</h2>
+
+              <p class="section-text">
+              
+              </p>
+              <form id="appoin-form" class="appoin-form">
+                <div class="input-wrapper">
+                  <input type="text" id="name" placeholder="Your Full Name" required class="input-field">
+                  <input type="email" id="email" placeholder="Email Address" required class="input-field">
+                </div>
+                <div class="input-wrapper">
+                  <input type="tel" id="phone" placeholder="Phone Number" required class="input-field">
+                  <select id="category" required class="input-field">
+                    <option value="">Select category</option>
+                    <option value="Beauty &amp; spa">Beauty &amp; spa</option>
+                    <option value="Body massage">Body massage</option>
+                    <option value="Shaving &amp; Facial">Shaving &amp; Facial</option>
+                    <option value="Hair Color">Hair Color</option>
+                  </select>
+                </div>
+                <input type="date" id="date" required class="input-field date">
+                <textarea id="message" placeholder="Write Message" required class="input-field"></textarea>
+                <button type="submit" class="form-btn">
+                  <span class="span">Appointment Now</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+              
+              
+              
+            </div>
+
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
 
 
 
@@ -849,17 +791,16 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            provide
-            <span class="span">feedback</span>
+            RATE
+            <span class="span">our services</span>
           </a>
 
-          <form class="appoin-form"   action="https://formspree.io/f/mwkdwqyb"
-              method="POST" target="_blank">
+          <form action="" class="input-wrapper">
 
             <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
 
             <button type="submit" class="btn has-before">
-              <span class="span">submit feedback</span>
+              <span class="span">Subscribe Now</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
