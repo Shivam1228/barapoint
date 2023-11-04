@@ -753,51 +753,51 @@
 
               <h2 class="h2 section-title">Make Appointment</h2>
 
-              <p class="section-text">
               
-              </p>
-              <form id="appoin-form" class="appoin-form">
+              <form class="appoin-form" action="https://formspree.io/f/xpzgnrjp" method="POST" target="_blank">
                 <div class="input-wrapper">
-                  <input type="text" id="name" placeholder="Your Full Name" required class="input-field">
-                  <input type="email" id="email" placeholder="Email Address" required class="input-field">
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required class="input-field">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required class="input-field">
                 </div>
                 <div class="input-wrapper">
-                  <input type="tel" id="phone" placeholder="Phone Number" required class="input-field">
-                  <select id="category" required class="input-field">
-                    <option value="">Select category</option>
-                    <option value="Beauty &amp; spa">Barber</option>
-                    <option value="Hair Color">Electrician</option>
-                    <option value="Body massage">Laundary</option>
-                    <option value="Shaving &amp; Facial">Shaving &amp; Facial</option>
-                    <option value="Hair Color">Cobbler</option>
-                    <option value="Hair Color">Plumber</option>
-                    <option value="Hair Color">Home Cook</option>
-                </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="input-field">
+                    <select id="category" name="category" required class="input-field">
+                        <option value="">Select category</option>
+                        <option value="Barber">Barber</option>
+                        <option value="Electrician">Electrician</option>
+                        <option value="Laundary">Laundary</option>
+                        <option value="Shaving & Facial">Shaving & Facial</option>
+                        <option value="Cobbler">Cobbler</option>
+                        <option value="Plumber">Plumber</option>
+                        <option value="Home Cook">Home Cook</option>
+                    </select>
                 </div>
-                <input type="date" id="date" required class="input-field date">
-                <select id="category" required class="input-field">
-                    <option value="">Select Area</option>
-                    <option value="Beauty &amp; spa">Ordnance Factory</option>
-                    <option value="Hair Color">Asalatnagar</option>
-                    <option value="Body massage">Radhey Shyam Phase 3</option>
-                    <option value="Body massage">Radhey Shyam Phase 5</option>
-                    <option value="Shaving &amp; Facial">Railway Road</option>
-                    <option value="Hair Color">Brij Vihar</option>
-                </select>                
-                <select id="category" required class="input-field">
-                    <option value="">Select Time</option>
-                    <option value="Beauty &amp; spa">9-12 AM</option>
-                    <option value="Hair Color">12-3 PM</option>
-                    <option value="Body massage">3-6 PM</option>
-                </select>                
-                <textarea id="message" placeholder="Write Message" required class="input-field"></textarea>
+                <div class="input-wrapper">
+                    <input type="date" id="date" name="date" required class="input-field date">
+                    <select id="area" name="area" required class="input-field">
+                        <option value="">Select Area</option>
+                        <option value="Ordnance Factory">Ordnance Factory</option>
+                        <option value="Asalatnagar">Asalatnagar</option>
+                        <option value="Radhey Shyam Phase 3">Radhey Shyam Phase 3</option>
+                        <option value="Radhey Shyam Phase 5">Radhey Shyam Phase 5</option>
+                        <option value="Railway Road">Railway Road</option>
+                        <option value="Brij Vihar">Brij Vihar</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <select id="time" name="time" required class="input-field">
+                        <option value="">Select Time</option>
+                        <option value="9-12 AM">9-12 AM</option>
+                        <option value="12-3 PM">12-3 PM</option>
+                        <option value="3-6 PM">3-6 PM</option>
+                    </select>
+                    <textarea id="message" name="message" placeholder="Write Message" required class="input-field"></textarea>
+                </div>
                 <button type="submit" class="form-btn">
-                  <span class="span">Appoint Now</span>
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    Appoint Now
                 </button>
-              </form>
-              
-              
+            </form>
+                   
               
             </div>
 
