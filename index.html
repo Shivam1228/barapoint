@@ -136,7 +136,7 @@
 
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              <a href="#footer-bottom" class="navbar-link" data-nav-link>Contact</a>
             </li>
             <li class="navbar-item">
               <a href="Login.html" class="navbar-link" data-nav-link>Login/Register</a>
@@ -174,18 +174,39 @@
         style="background-image: url(mainbannar.png)">
         <div class="container">
 
-          <h1 class="h1 hero-title">barber  and other household services</h1>
+          <h1 class="h1 hero-title">APPOINTHERE</h1>
 
           <p class="hero-text">
-            Now you can just use appointME and  get all the services here ........
+            Now you can just use Appointhere and  get all the services here ........
           </p>
 
           <a href="#" class="btn has-before">
             <span class="span">Explore Our Services</span>
-
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
+               <h1 style="text-align: center;">Service Provider Verification</h1>
+        <label for="providerId" style="font-weight: bold;background-color: #4caf50;">Enter Service Provider ID:</label>
+        <input type="text" id="providerId" style="width: 100%; background-color: #E0E0E0;padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+    
+        <button onclick="verifyServiceProvider()" style="padding: 10px 20px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">Verify</button>
+    
+        <div id="verificationResult" style="margin-top: 20px; padding: 10px; border: 1px solid #11f838; border-radius: 5px; background-color: white;"></div>
+    
+        <script>
+         function verifyServiceProvider() {
+            var providerId = document.getElementById("providerId").value.toLowerCase();
 
+            // Valid service provider IDs
+            var validIds = ["carpenter111", "laundry007", "barber101"];
+
+            // Check if the entered ID is in the list of valid IDs
+            if (validIds.includes(providerId)) {
+                document.getElementById("verificationResult").innerText = "Valid Service Provider!";
+            } else {
+                document.getElementById("verificationResult").innerText = "Invalid Service Provider.";
+            }
+        }
+        </script>
         </div>
       </section>
 
@@ -396,7 +417,7 @@
                     <i class="flaticon-spa" aria-hidden="true"></i>
                   </div>
 
-                  <p class="btn-text">electrician and carpainter</p>
+                  <p class="btn-text">electrician and carpenter</p>
                 </button>
               </li>
 
@@ -528,7 +549,7 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Carpainter</h3>
+                    <h3 class="h3 card-title">Carpenter</h3>
 
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
@@ -744,16 +765,34 @@
                   <input type="tel" id="phone" placeholder="Phone Number" required class="input-field">
                   <select id="category" required class="input-field">
                     <option value="">Select category</option>
-                    <option value="Beauty &amp; spa">Beauty &amp; spa</option>
-                    <option value="Body massage">Body massage</option>
+                    <option value="Beauty &amp; spa">Barber</option>
+                    <option value="Hair Color">Electrician</option>
+                    <option value="Body massage">Laundary</option>
                     <option value="Shaving &amp; Facial">Shaving &amp; Facial</option>
-                    <option value="Hair Color">Hair Color</option>
-                  </select>
+                    <option value="Hair Color">Cobbler</option>
+                    <option value="Hair Color">Plumber</option>
+                    <option value="Hair Color">Home Cook</option>
+                </select>
                 </div>
                 <input type="date" id="date" required class="input-field date">
+                <select id="category" required class="input-field">
+                    <option value="">Select Area</option>
+                    <option value="Beauty &amp; spa">Ordnance Factory</option>
+                    <option value="Hair Color">Asalatnagar</option>
+                    <option value="Body massage">Radhey Shyam Phase 3</option>
+                    <option value="Body massage">Radhey Shyam Phase 5</option>
+                    <option value="Shaving &amp; Facial">Railway Road</option>
+                    <option value="Hair Color">Brij Vihar</option>
+                </select>                
+                <select id="category" required class="input-field">
+                    <option value="">Select Time</option>
+                    <option value="Beauty &amp; spa">9-12 AM</option>
+                    <option value="Hair Color">12-3 PM</option>
+                    <option value="Body massage">3-6 PM</option>
+                </select>                
                 <textarea id="message" placeholder="Write Message" required class="input-field"></textarea>
                 <button type="submit" class="form-btn">
-                  <span class="span">Appointment Now</span>
+                  <span class="span">Appoint Now</span>
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </button>
               </form>
@@ -797,10 +836,10 @@
 
           <form action="" class="input-wrapper">
 
-            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+            <input type="email" name="email_address" placeholder="Enter Your Feedback" required class="email-field">
 
             <button type="submit" class="btn has-before">
-              <span class="span">Subscribe Now</span>
+              <span class="span">Feedback</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
@@ -819,22 +858,6 @@
 
             <li>
               <a href="#" class="footer-link has-before">Our Services</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Meet Our Team</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Our Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Need A Career?</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">News & Blog</a>
             </li>
 
           </ul>
