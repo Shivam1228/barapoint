@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
+  <link rel="stylesheet" href="form.css">
+ <!-- 
     - primary meta tags
   -->
   <title>AppointHere</title>
@@ -32,7 +32,6 @@
     <!-- href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
     rel="stylesheet">
 
-  <!-- 
     - flaticon
   -->
   <link rel="stylesheet" href="assets/css/flaticon.min.css">
@@ -40,11 +39,11 @@
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href=""https://github.com/Shivam1228/barapoint/blob/main/teach_professionalism1200x630.png""> -->
+  <link rel="preload" as="image" href=""https://github.com/Shivam1228/barapoint/blob/main/teach_professionalism1200x630.png""> 
 
 </head>
 
-<body id="top">
+<body id="top" class="lol" style="background: #FFE5CC;">
 
   <!-- 
     - #HEADER
@@ -220,7 +219,7 @@
 
      
 
-<section class="section service" id="services" aria-label="services">
+<section class="section service" id="services" aria-label="services" style="background: #9999ff">
         <div class="container">
 
           <h2 class="h2 section-title text-center">Service We Provide</h2>
@@ -530,7 +529,7 @@
         - #GALLERY
       -->
 
-      <section class="section gallery" id="gallery" aria-label="photo gallery">
+      <section class="section gallery" style="background: #9999ff" id="gallery" aria-label="photo gallery">
         <div class="container">
 
           <div class="title-wrapper">
@@ -655,7 +654,7 @@
 
       <!-- 
         - #APPOINTMENT
-      -->
+      
 
       <section class="section appoin" id="appointment" aria-label="appointment">
         <div class="container">
@@ -672,7 +671,9 @@
               <h2 class="h2 section-title">Make Appointment</h2>
 
               
-              <form class="appoin-form" action="https://formspree.io/f/xpzgnrjp" method="POST" target="_blank">
+              <form class="appoin-form" action="https://formspree.io/f/xpzgnrjp" method="POST" 
+              
+              ">
                 <div class="input-wrapper">
                     <input type="text" id="name" name="name" placeholder="Your Full Name" required class="input-field">
                     <input type="email" id="email" name="email" placeholder="Email Address" required class="input-field">
@@ -731,9 +732,10 @@
 
     </article>
   </main>
-
-
-
+-->
+<div class="form-container" style="display: flex; justify-content: center; align-items: center; height: 270vh; border: 2px solid blueviolet;">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNYFrj_MOx4Ga_FZMdpor6Mh_ODQ4H6uLmKS1SkE9PhLbqVQ/viewform?embedded=true" width="1680" height="1828" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
 
   <!-- 
@@ -752,7 +754,9 @@
             <span class="span">our services</span>
           </a>
 
-          <form action="" class="input-wrapper">
+          <form   action="https://formspree.io/f/mleyvnoy"
+          method="POST" target="_blank"
+         class="input-wrapper">
 
             <input type="text" name="text field" placeholder="Enter Your Feedback" required class="text">
 
